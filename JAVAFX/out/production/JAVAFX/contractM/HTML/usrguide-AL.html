@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body,html{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:100%;
+  background-color:#95bdff;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+button{
+border-radius:5px;
+border:none;
+padding:5px 20px;
+margin-right:10px;
+margin-top:50px;
+cursor:pointer;
+box-shadow:0 0 5px 1px #cecece;
+}
+p{
+max-width:600px; text align:center;
+color:#929292;}
+h3{
+padding:0 30px 5px 30px;
+color:white;
+border-bottom:solid 0px white;
+box-shadow: 0 4px 3px -3.5px white;
+}
+</style>
+</head>
+<body>
+
+<h3>Udhezim per perdoruesin</h3>
+<div style="margin-top:20px;background-color:white;padding:10px 50px;border-radius:3px;box-shadow:0 0 5px 0 gray;"> <p> Ky Aplikicion eshte bere me qellim qe Kompanite te kene me te lehte te menaxhojne punonjesit e tyre. Punedhenesit do te kene qasje ne te dhenat e punonjesve te tyre dhe mund t'i ndryshojne ato ne varesi te performances se tyre dhe dukurive te tjera. </p> <p> Se pari, ju keni shiritin e mjeteve per te bere me te lehte per te lundruar ndermjet faqeve. </p> <p> Ekzistojne dy butona ne varesi te faktit nese deshironi te shtoni nje punonjes te ri ose azhurnoni te dhenat tashme ekzistuese te nje punonjesi. </p> </div>
+<div>
+<button onclick="goBack()">Kthehu Mbrapa</button>
+<button onclick="goForward()">Shko Perpara</button></div>
+</div>
+<script>
+function goBack(){
+	window.history.back();
+}
+function goForward(){
+	window.history.go(1);
+}
+</script>
+</body>
+</html>

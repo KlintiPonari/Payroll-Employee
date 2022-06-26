@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body,html{
+  display:flex; 
+  margin:0;
+  height:100%;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+ text-decoration:none;
+}
+ul{
+padding-left:20px;
+}
+li{
+margin-bottom:10px;
+}
+button{
+border-radius:5px;
+border:none;
+padding:5px 20px;
+margin-right:10px;
+margin-top:50px;
+cursor:pointer;
+}
+h1,h3{
+padding:0 30px 5px 30px;
+color:#545454;
+border-bottom:solid 0px gray;
+box-shadow: 0 4px 3px -3.5px gray;
+}
+p{
+margin-left:20px;
+}
+h1{
+margin-top:15px;}
+</style>
+</head>
+<body>
+
+<div style="border-right:solid 0px gray;box-shadow:0 0 5px 0 gray; padding:0 40px;">
+	<h3 >Permbajtja</h3>
+	<ul>
+		<li><a href="usrguide-AL.html">Udhezues per Perdorues</a></li>
+		<li><a href="shortcuts-AL.html">Shkurtesat</a></li>
+	</ul>
+</div>
+
+<div style=" padding:0 20px;">
+	
+<section id="seciton1">
+  <h1>Duke perdorur Seksionin e Ndihmes</h1>
+  <p> Shfletoni temat ne tabelen <b> Permbajtja </b> ne te majte. </p>
+<p> Klikoni mbi nje teme per ta shfaqur ate.</p>
+   <p> Perdorni butonat prapa dhe perpara per te lundruar brenda historise se temave te shikuara. </p>
+</section>
+<div>
+<button onclick="goBack()">Kthehu Mbrapa</button>
+<button onclick="goForward()">Shko Perpara</button></div>
+</div>
+
+<script>
+function goBack(){
+	window.history.back();
+}
+function goForward(){
+	window.history.go(1);
+}
+</script>
+</body>
+</html>
