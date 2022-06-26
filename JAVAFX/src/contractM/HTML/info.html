@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body,html{
+  display:flex; 
+  margin:0;
+  height:100%;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+ text-decoration:none;
+}
+ul{
+padding-left:20px;
+}
+li{
+margin-bottom:10px;
+}
+button{
+border-radius:5px;
+border:none;
+padding:5px 20px;
+margin-right:10px;
+margin-top:50px;
+cursor:pointer;
+}
+h1,h3{
+padding:0 30px 5px 30px;
+color:#545454;
+border-bottom:solid 0px gray;
+box-shadow: 0 4px 3px -3.5px gray;
+}
+p{
+margin-left:20px;
+}
+h1{
+margin-top:15px;}
+</style>
+</head>
+<body>
+
+<div style="border-right:solid 0px gray;box-shadow:0 0 5px 0 gray; padding:0 40px;">
+	<h3 >Contents</h3>
+	<ul>
+		<li><a href="usrguide.html">User Guide</a></li>
+		<li><a href="shortcuts.html">Shortcuts</a></li>
+	</ul>
+</div>
+
+<div style=" padding:0 20px;">
+	
+<section id="seciton1">
+  <h1>Using the Help Section</h1>
+  <p>Browse topics in the <b>Contents</b> table on your left.</p>
+  <p>  Click on a topic to have it displayed.
+  </p>
+  <p>Use the back and forward buttons to  navigate within the history of viewed topics.</p> 
+</section>
+<div>
+<button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button></div>
+</div>
+
+<script>
+function goBack(){
+	window.history.back();
+}
+function goForward(){
+	window.history.go(1);
+}
+</script>
+</body>
+</html>

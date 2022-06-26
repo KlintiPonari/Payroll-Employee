@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            background-color: #95bdff;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            padding: 5px 20px;
+            margin-right: 10px;
+            margin-top: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 5px 1px #cecece;
+        }
+
+        p {
+            max-width: 600px;
+            text align: center;
+            color: #929292;
+        }
+
+        h3 {
+            padding: 0 30px 5px 30px;
+            color: white;
+            border-bottom: solid 0px white;
+            box-shadow: 0 4px 3px -3.5px white;
+        }
+    </style>
+</head>
+<body>
+
+<h3>ShortCuts</h3>
+<div style="background-color:white;margin-top:20px;padding:10px 50px;border-radius:3px;box-shadow:0 0 5px 0 white;">
+    <p>To make this an easier and more pleasant experience for you, of course we have included a few shortcuts.</p>
+    <p> Here are the shortcuts we've included in our application: </p>
+    <ul>
+
+        <li> Enter => Sign in / Sign Up</li>
+        <li> Alt + H => Navigate to Home Page</li>
+        <li> Alt + U => Navigate to Update Employees Page</li>
+        <li> Alt + A => Navigate to Add Employees Page</li>
+        <li> Alt + V => Navigate to View Employees Page </li>
+        <li> Alt + X => Closes Application </li>
+        <li> Alt + L => LOGOUT </li>
+        <li> Ctrl + A => Albanian Language </li>
+        <li> Ctrl + E => English Language </li>
+        <li> Ctrl + H => Help Section </li>
+        <li> Ctrl + Enter => Add/Update Employee </li>
+        <li> Ctrl + Delete => Clear Fields </li>
+    </ul>
+
+</div>
+<div>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+</div>
+</div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goForward() {
+        window.history.go(1);
+    }
+</script>
+</body>
+</html>

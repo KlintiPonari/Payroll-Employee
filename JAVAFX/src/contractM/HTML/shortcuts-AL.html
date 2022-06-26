@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            background-color: #95bdff;
+            font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            padding: 5px 20px;
+            margin-right: 10px;
+            margin-top: 50px;
+            cursor: pointer;
+            box-shadow: 0 0 5px 1px #cecece;
+        }
+
+        p {
+            max-width: 600px;
+            text align: center;
+            color: #929292;
+        }
+
+        h3 {
+            padding: 0 30px 5px 30px;
+            color: white;
+            border-bottom: solid 0px white;
+            box-shadow: 0 4px 3px -3.5px white;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Shkurtoret</h3>
+<div style="background-color:white;margin-top:20px;padding:10px 50px;border-radius:3px;box-shadow:0 0 5px 0 white;">
+    <p> Per ta bere kete nje pervoje me te lehte dhe me te kendshme per ju, sigurisht qe kemi perfshire disa
+        shkurtore. </p>
+    <p> Ketu jane shkurtoret qe kemi perfshire ne aplikacionin tone: </p>
+    <ul>
+
+        <li> Enter => Kycu / Regjistrohu</li>
+        <li> Alt + H => Shkoni tek faqja kryesore</li>
+        <li> Alt + U => Shkoni tek faqja per te perditesuar punjones</li>
+        <li> Alt + A =>  Shkoni tek faqja per te shtuar punjones</li>
+        <li> Alt + V => Shkoni tek faqja per te pare punjonesit</li>
+        <li> Alt + X => Mbyllet Aplikacioni</li>
+        <li> Alt + L => DILNI</li>
+        <li> Ctrl + A => Gjuha shqipe</li>
+        <Li> Ctrl + E => Gjuha Angleze</li>
+        <li> Ctrl + H => Seksioni i Ndihmes</li>
+        <li> Ctrl + Enter => Shto / Perditeso Punonjesin</li>
+        <li> Ctrl + Delete => Pastro Fushat</li>
+    </ul>
+
+</div>
+<div>
+    <button onclick="goBack()">Kthehu Mbrapa</button>
+    <button onclick="goForward()">Shko Perpara</button>
+</div>
+</div>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goForward() {
+        window.history.go(1);
+    }
+</script>
+</body>
+</html>

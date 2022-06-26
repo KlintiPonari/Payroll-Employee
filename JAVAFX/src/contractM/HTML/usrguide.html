@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body,html{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  height:100%;
+  background-color:#95bdff;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+button{
+border-radius:5px;
+border:none;
+padding:5px 20px;
+margin-right:10px;
+margin-top:50px;
+cursor:pointer;
+box-shadow:0 0 5px 1px #cecece;
+}
+p{
+max-width:600px; text align:center;
+color:#929292;}
+h3{
+padding:0 30px 5px 30px;
+color:white;
+border-bottom:solid 0px white;
+box-shadow: 0 4px 3px -3.5px white;
+}
+</style>
+</head>
+<body>
+
+<h3>A User's Guid!</h3>
+<div style="margin-top:20px;background-color:white;padding:10px 50px;border-radius:3px;box-shadow:0 0 5px 0 gray;"> <p>This Application was made in order to make it easier for Companies to manage their employees. The employeers will have access to their employees' data and can alter them depending on their performance and other occurrences.</p> <p>First off, you have the toolbar to make it easier to navigate in between pages. </p> <p>There are two buttons depending whether you will want to add a new employee or update an employee's already existing data.</p></div>
+<div>
+<button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button></div>
+</div>
+<script>
+function goBack(){
+	window.history.back();
+}
+function goForward(){
+	window.history.go(1);
+}
+</script>
+</body>
+</html>
